@@ -1,0 +1,123 @@
+body{
+    background-color: #1b1b1b;
+    color: #5c5c5c;
+    min-width: 300px;
+}
+
+.block{
+    background-color: #292929;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #fff;
+    margin: 0;
+}
+
+.banner{
+    display: flex;
+}
+
+.banner div{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+
+.number{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.number h1{
+    position: absolute;
+    /* margin: 0; */
+}
+
+.title .text{
+    width: calc(100% - 50px);
+    border-bottom: 2px solid #5c5c5c;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.block .skills{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block .skills > div {
+    width: 49%;
+}
+
+.block .skills ul{
+    width: 100%;
+    height: 10px;
+    outline: 2px solid #5c5c5c;
+    list-style-type: none;
+    padding: 0;
+}
+
+.block .skills ul li{
+    background-color: #2196F3;
+    height: 10px;
+}
+
+.block .skills .progress{
+    display: flex;
+    justify-content: space-between;
+}
+
+#education .title .text{
+    text-align: right;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner img{
+        width: 50%;
+    }
+
+    .block .banner .avatar{
+        text-align: right;
+    }
+
+    .block .skills{
+        flex-direction: column;
+    }
+
+    .block .skills > div {
+        width: unset;
+    }    
+}
+/* mobile */
