@@ -21,14 +21,13 @@ h1{
 }
 
 .banner div{
-    flex-grow: 1;
-    flex-basis: 0;
+    flex: 1;
 }
 
 .banner img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
 
 .circle {
@@ -85,7 +84,7 @@ h1{
 }
 
 .block .skills ul li{
-    background-color: #2196F3;
+    background-color: #00bdaf;
     height: 10px;
 }
 
@@ -94,12 +93,33 @@ h1{
     justify-content: space-between;
 }
 
-#education .title .text{
+/* #education .title .text{
+    text-align: right;
+} */
+
+/* #education .skills{
+    text-align: right;
+} */
+
+#profile .banner .row-1{
     text-align: right;
 }
 
-#education .skills{
-    text-align: right;
+#profile .banner .avatar{
+    text-align: center;
+}
+
+a{
+    color: #00bdaf;
+    /* text-decoration: none; */
+}
+
+#experience .jobs .row-1{
+    display: flex;
+}
+
+#experience .jobs .row-1 > div {
+    flex: 1;
 }
 
 /* mobile */
@@ -108,13 +128,9 @@ h1{
         flex-direction: column;
     }
 
-    .banner img{
-        width: 50%;
-    }
-
-    .block .banner .avatar{
-        text-align: right;
-    }
+    /* #profile .banner .avatar{
+        text-align: left;
+    } */
 
     .block .skills{
         flex-direction: column;
@@ -127,5 +143,14 @@ h1{
     .block .skills > div {
         width: unset;
     }    
+
+    #profile .banner .row-1{
+        text-align: left;
+    }
+
+    #experience .jobs .row-1{
+        flex-direction: column;
+    }
+    
 }
 /* mobile */
