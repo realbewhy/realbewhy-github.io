@@ -98,6 +98,10 @@ h1{
     text-align: right;
 }
 
+#education .skills{
+    text-align: right;
+}
+
 /* mobile */
 @media only screen and (max-width: 768px) {
     .banner{
@@ -114,6 +118,10 @@ h1{
 
     .block .skills{
         flex-direction: column;
+    }
+
+    #education .skills{
+        flex-direction: column-reverse;
     }
 
     .block .skills > div {
