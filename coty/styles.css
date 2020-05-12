@@ -1,11 +1,11 @@
 .content .avatar {
-    width: 120px;
-    height: 120px;
+    width: 20vh;
+    height: 20vh;
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
     object-fit: cover;
-    border-radius: 60px;
+    border-radius: 10vh;
     border: 3px #fff solid;
 }
 
@@ -28,6 +28,7 @@
     }
 }
 
+
 body {
     background-image: url('https://b-f10-zpc.zdn.vn/4419345183332908397/23a209f9235ad804814b.jpg');
     background-size: cover;
@@ -37,18 +38,6 @@ body {
     height: 100vh;
     margin: 0;
     min-height: 300px;
-}
-
-#main {
-    display: grid;
-    height: 100%;
-}
-
-
-.button {
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
 }
 
 .info {
@@ -67,24 +56,34 @@ body {
     background: rgb(119, 72, 54, .5);
 }
 
-#menu {
-    display: grid;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 6px;
-    grid-row-gap: 5px;
+#main {
     padding: 0 5px;
-    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    display: flex;
+    min-width: 300px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
     margin: auto;
-    height: 80%;
+    height: 50%;
+    width: 100%;
+}
+
+#menu .button {
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    width: 49%;
 }
 
 img {
     width: 100%;
-    /* height: 200px; */
     object-fit: contain;
+    height: 100%;
+    min-width: 100px;
+    min-height: 100px;
 }
 
 #menu .photos img{
@@ -101,48 +100,161 @@ img {
 }
 
 #hidden-menu {
-    display: none;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-    text-align: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 6px;
-    grid-row-gap: 5px;
-    padding: 0 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #hidden-menu div {
     padding: 10px 0;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     text-align: center;
     cursor: pointer;
+    width: 24%;
 }
 
-/* #content {
-    margin: 0 10px;
-    display: none;
+#content {
+    height: 46vh;
 }
 
-#info-content {
+#info-content, #photos-content, #booking-content, #prices-content{
     display: none;
-    padding: 10px;
-} */
+    height: 100%;
+    overflow: auto;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+}
 
 #close {
-    position: fixed;
+    position: absolute;
     right: 10px;
     padding: 5px;
     font-size: 30px;
     cursor: pointer;
+    z-index: 1;
+}
+
+#menu .button p{
+    height: 20%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#profile{
+    justify-content: flex-start;
+    margin: auto;
+    height: 50vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.menu-row{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#profile #content #info-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#profile #content #info-content .image-1{
+    opacity: 0.3;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    transform: rotate(20deg);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+#profile #content #info-content .image-2{
+    opacity: 0.3;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    transform: rotate(-38deg);
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+#profile #content #info-content .image-3{
+    width: auto;
+    height: 200px;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 50.2px;
+    right: 83px;
+    transform: rotate(-20deg);
+    border-radius: 25px;
+}
+
+#profile #content #info-content .image-4{
+    height: auto;
+    width: 150px;
+    opacity: 0.3;
+    position: absolute;
+    left: 47%;
+    top: 108px;
+    border-radius: 44px;
+    transform: rotate(37deg);
+}
+
+#profile #content #info-content .image-5{
+    height: auto;
+    width: 140px;
+    opacity: 0.3;
+    left: 83px;
+    position: absolute;
+    bottom: 160px;
+    transform: rotate(-15deg);
+    border-radius: 25px;
+}
+
+#main #profile #booking-content a {
+    float: none;
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-    #main {
+    #menu{
+        height: 80%;
         flex-direction: column;
     }
-
-    .row {
-        width: unset;
-        margin: unset;
+    #profile{
+        height: 80vh;
+    }
+    .menu-row{
+        display: flex;
+        justify-content: space-around;
+        height: 50%;
+        width: 100%;
+    }
+    #menu .menu-row .button{
+        width: 49%;
+        margin: 0.5%;
+    }
+    #menu .button{
+        width: 24%;
+    }
+    #content{
+        height: 76vh;
     }
 }
