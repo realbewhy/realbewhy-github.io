@@ -125,16 +125,22 @@ img {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     position: relative;
-    padding: 10px;
+    padding: 30px 10px 10px;
 }
 
 #close {
     position: absolute;
-    right: 10px;
+    right: 5px;
     padding: 5px;
     font-size: 30px;
     cursor: pointer;
     z-index: 1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #menu .button p{
