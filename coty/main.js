@@ -190,10 +190,14 @@ window.onload = () => {
                 const background = document.createElement('DIV')
                 background.classList.add('background')
                 background.style.backgroundImage = "url('" + element + "')"
+                const a = document.createElement('a')
+                a.href = element
+                a.target = '_blank'
                 const image = new Image()
                 image.src = element
                 div.appendChild(background)
-                div.appendChild(image)
+                a.appendChild(image)
+                div.appendChild(a)
                 photos.appendChild(div)
             });
         }
