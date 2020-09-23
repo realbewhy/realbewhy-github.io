@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>SP Coin</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://spcoin.io/assets/img/logo.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/timeline.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top navbar-dark"
+        id="Menu"
+        data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/img/logo3001.png"
+            alt=""
+            srcset=""
+            class="animate__animated animate__fadeInDown"
+            style="animation-delay: 0.3s; opacity: 1"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active animate__animated animate__fadeInDown">
+              <a class="nav-link" href="#Intro">Introduction</a>
+            </li>
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.2s; opacity: 1"
+            >
+              <a class="nav-link" href="#Total">Total Supply</a>
+            </li>
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.2s; opacity: 1"
+            >
+              <a class="nav-link" href="#white-paper">White Paper</a>
+            </li>
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.3s; opacity: 1"
+            >
+              <a class="nav-link" href="#map">Roadmap</a>
+            </li>
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.2s; opacity: 1"
+            >
+              <a class="nav-link" href="#news">News</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.4s; opacity: 1"
+            >
+              <a
+                class="nav-link Register"
+                href="https://spcoin.io/main/register"
+                >Register</a
+              >
+            </li>
+            <li
+              class="nav-item animate__animated animate__fadeInDown"
+              style="animation-delay: 0.3s; opacity: 1"
+            >
+              <a class="nav-link Login" href="https://spcoin.io/main/login"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item dropdown animate__animated animate__fadeInDown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tiếng Việt
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Tiếng Việt</a>
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="Main">
+      <!-- slide -->
+      <div class="Slide">
+        <img
+          src="assets/img/back-front.001.png"
+          alt=""
+          srcset=""
+          data-aos="fade-in"
+          data-aos-offset="200"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        />
+        <div
+          class="Content container"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
+            Cryptocurrency Exchange and More
+          </h1>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">
+            Our mission is advancing the blockchain technology to reach towards
+            a decentralized and a sustainable financial world
+          </p>
+          <div
+            class="row animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="col-md-4 col-8 m-auto">
+              <canvas id="chDonut1"></canvas>
+              <p>Round 1: $0.02</p>
+            </div>
+            <div class="col-md-4 col-8 m-auto">
+              <canvas id="chDonut2"></canvas>
+              <p>Round 2: $0.04</p>
+            </div>
+            <div class="col-md-4 col-8 m-auto">
+              <canvas id="chDonut3"></canvas>
+              <p>Round 3: $0.05</p>
+            </div>
+          </div>
+          <div
+            class="input-group mb-3 mt-5 animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="input-group-prepend">
+              <span class="input-group-text rounded-pill left">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-volume-up"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04L4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04z"
+                  />
+                  <path
+                    d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"
+                  />
+                  <path
+                    d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"
+                  />
+                  <path
+                    d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              value="SPCoin - Tiền điện tử chất nhất Viêt Nam"
+              disabled
+            />
+            <div class="input-group-append">
+              <span class="input-group-text rounded-pill right">More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slide -->
+      <!-- intro -->
+      <div id="Intro" class="hidden-id"></div>
+      <div
+        class="intro container text-center pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1
+          class="text-color-sell animate__animated animate__fadeInUp animate__fast"
+        >
+          About is SPExchange ?
+        </h1>
+        <p
+          class="text-color-buy animate__animated animate__fadeInUp animate__fast"
+        >
+          SPExchange is the world’ first FREE-FEE cryptocurrency exchange. We
+          aims to support and nurture new potential Blockchain startups by
+          providing FREE connectivity services between Blockchain technology
+          startups and the Global Crypto Community through SPExchange platform
+          with our absolute support
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 mt-5">
+          <div class="col hvr-wobble-vertical">
+            <div
+              class="card mb-3 animate__animated animate__fadeInUp animate__fast"
+            >
+              <div class="row no-gutters flex-row flex-md-row-reverse">
+                <div class="col-3">
+                  <img
+                    src="assets/img/fingerprint.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Comprehensive protection with security and law funds
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img
+                    src="assets/img/rocket.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Efficient trading and instant deposit/withdrawal
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters flex-row flex-md-row-reverse">
+                <div class="col-3">
+                  <img
+                    src="assets/img/scales.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">Stable and reliable since 2017</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img
+                    src="assets/img/column.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      An special exchange that lives up to your expectations
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- intro -->
+      <!-- Problems and solution -->
+      <div
+        class="container-fluid pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="container problem text-center">
+          <h1 class="text-color-sell">Problems and solution</h1>
+          <p class="text-color-buy">
+            In 2009, the birth of Bitcoin opened a new era for decentralized
+            finance. New cryptocurrency exchanges are constantly being launched,
+            but they are still unable to promote blockchain technology projects
+            for the following reasons:
+          </p>
+          <div class="row row-cols-1 row-cols-lg-3 mt-5 pt-5">
+            <div class="col mb-5">
+              <div class="col-8 col-lg-12 p-0 m-auto">
+                <div class="Top">
+                  <img src="assets/img/chart.png" alt="" srcset="" />
+                  <h5>ADVANCE</h5>
+                </div>
+                <div class="Bottom">
+                  <p>
+                    Exchanges with high listing fees make it impossible for new
+                    blockchain projects (lacking capital) to access new capital
+                    from the global community
+                  </p>
+                  <button>HOW WE WORK?</button>
+                  <p>
+                    SP Exchange will free the entire listing service cost for
+                    new blockchain projects, potential blockchain start ups when
+                    approved by the council
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="col-8 col-lg-12 p-0 m-auto">
+                <div class="Top">
+                  <img src="assets/img/people.png" alt="" srcset="" />
+                  <h5>CONNECTION</h5>
+                </div>
+                <div class="Bottom">
+                  <p>
+                    Exchanges prioritize profitability rather than helping
+                    motivate, support potential blockchain projects, and develop
+                    emerging technology startups
+                  </p>
+                  <button>HOW WE WORK?</button>
+                  <p>
+                    SP Exchange always searchs and supports new blockchain
+                    projects, potential technology startups around the globe,
+                    helping to promote development through introducing them to
+                    the global cryptocurrency community in a fastest way
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="col-8 col-lg-12 p-0 m-auto">
+                <div class="Top">
+                  <img src="assets/img/free.png" alt="" srcset="" />
+                  <h5>FEE</h5>
+                </div>
+                <div class="Bottom">
+                  <p>
+                    In addition to the blockchain authentication fee,
+                    organizations, funds and participants also pay other fees to
+                    the exchange
+                  </p>
+                  <button>HOW WE WORK?</button>
+                  <p>
+                    SP Exchange free of charge all transaction fees for
+                    organizations, funds and individuals participating in
+                    transactions on its platform. (excluded blockchain
+                    authentication fee)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Problems and solution -->
+      <!-- SPExchange Specialties -->
+      <div
+        class="container-fluid text-center Specialties pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="container">
+          <h1 class="text-color-sell">SPExchange Specialties</h1>
+          <p class="text-color-buy">
+            Instead of focusing solely on profit, SP Exchange is here to shape
+            your ideas, enhance and evolve by connecting the community with our
+            free and premium services.
+          </p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5">
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-header">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/chart.png" alt="" srcset="" />
+                    <div class="ml-3">PROJECT SUPPORT</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    With our experiences & infrastructures, our advisors will
+                    give out instructions & necessary tools for developers to
+                    effectively operating their projects
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-header">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/hands.png" alt="" srcset="" />
+                    <div class="ml-3">CONNECTION & PARTNERSHIP</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    SP Exchange connects new potential blockchain startup to the
+                    global cryptocurrency community & suitable partners in a
+                    more efficient way
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-header">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/fees.png" alt="" srcset="" />
+                    <div class="ml-3">LISTING & SERVICES FEES</div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    SP Exchange provide free listing & service costs for new
+                    blockchain projects, potential blockchain startups when
+                    approved by the council
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container text-center mt-5 mb-5 pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <p class="text-color-buy">
+          We want to create a transaction-friendly and service-free platform for
+          high-quality blockchain projects and products, thereby promoting the
+          blockchain industry to thrive in the future
+        </p>
+        <img
+          src="assets/img/rsz_11service001.png"
+          alt=""
+          srcset=""
+          class="col-md-8"
+        />
+      </div>
+      <!-- SPExchange Specialties -->
+      <!-- Ecosystem SPCoin -->
+      <div
+        id="Ecosystem"
+        class="container-fluid pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="container">
+          <h1 class="text-color-sell text-center">Ecosystem SPCoin</h1>
+          <p class="text-center text-color-buy">
+            The first free-free mechanism exchange,The first free-free mechanism
+            exchange
+          </p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-5">
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/chart.png" alt="" srcset="" />
+                    <div class="ml-3">SP Exchange</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/chart.png" alt="" srcset="" />
+                    <div class="ml-3">Trading option</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/dice.png" alt="" srcset="" />
+                    <div class="ml-3">Game</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/saving.png" alt="" srcset="" />
+                    <div class="ml-3">Staking</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/auction.png" alt="" srcset="" />
+                    <div class="ml-3">Dutch Auction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/defi.png" alt="" srcset="" />
+                    <div class="ml-3">DeFi</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/share.png" alt="" srcset="" />
+                    <div class="ml-3">SP Share</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card hvr-wobble-vertical">
+                <div class="card-body">
+                  <p class="card-text">
+                    The first free-free mechanism exchange,The first free-free
+                    mechanism exchange
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex flex-row align-items-center">
+                    <img src="assets/img/academy.png" alt="" srcset="" />
+                    <div class="ml-3">Academy</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ecosystem SPCoin -->
+      <!-- total supply -->
+      <div id="Total" class="hidden-id"></div>
+      <div
+        class="container text-center pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="text-color-sell">What is SPCoin (SPC) ?</h1>
+        <p class="text-color-buy">SPCoin is the official coin of SPExchange</p>
+        <p class="text-color-buy">
+          SPCoin (SPC) is the token of the SPExchange, issued on the ERC-20
+          platform of Blockchain Ethereum. SPC is the core of the SPExchange
+          ecosystem. We have carefully designed in-depth plans to increase
+          usability while reducing circulating supply to increase demand for SPC
+          in the future.
+        </p>
+        <img
+          src="assets/img/supply-img.png"
+          alt=""
+          srcset=""
+          class="mt-5 col-md-8"
+        />
+      </div>
+      <!-- total supply -->
+      <!-- total rounds -->
+      <div
+        class="container-fluid text-center rounds pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="container">
+          <p class="text-color-buy">
+            The total amount of SPShare (180,000,000SPC) distributed to the
+            community in three rounds with prices and total supply respectively:
+            $ 0.02 (50 million SPC), $ 0.04 (60 million SPC) and $ 0.05 (70
+            million SPC)
+          </p>
+          <img
+            src="assets/img/total-round.png"
+            class="mt-5 col-md-8"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <!-- total rounds -->
+      <!-- SPCoin (SPC) VALUE & POTENTIAL -->
+      <div
+        class="container text-center sp-coin pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="text-color-sell">SPCoin (SPC) VALUE & POTENTIAL</h1>
+        <div class="row row-cols-1 row-cols-md-2 mt-5">
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters flex-row flex-md-row-reverse">
+                <div class="col-3">
+                  <img
+                    src="assets/img/setting.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Diverse ecosystem and applications help to consume (burn)
+                      SPC efficiently
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img
+                    src="assets/img/network.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Growing global community, increasing demand for SPC in
+                      services
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters flex-row flex-md-row-reverse">
+                <div class="col-3">
+                  <img
+                    src="assets/img/fire.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Extract 20% of revenue from ecosystem activities each year
+                      to acquire and burn SPC
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img
+                    src="assets/img/key.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Anti-inflation when locked and return SPC from SPShare in
+                      300 days increases value to SPC
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters flex-row flex-md-row-reverse">
+                <div class="col-3">
+                  <img
+                    src="assets/img/chart.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Launched at the uptrend of the crypto and Bitcoin markets
+                      in general, Attracting new communities
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col hvr-wobble-vertical">
+            <div class="card mb-3">
+              <div class="row no-gutters">
+                <div class="col-3">
+                  <img
+                    src="assets/img/people.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Loyal members benefit from the rewards of SPExchange's
+                      diverse ecosystem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SPCoin (SPC) VALUE & POTENTIAL -->
+      <!-- white paper -->
+      <div id="white-paper" class="hidden-id"></div>
+      <div
+        class="white-paper container text-center mt-5 mb-5 pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="text-color-sell">White paper</h1>
+        <p class="text-color-buy">
+          This white paper contains current or future visions and expectations.
+          This material is intended to provide information to those who wish to
+          use the SP Coin Platform service and may not be used as an investment
+          proposal or as a protocol, warranty, etc. for the sale and purchase of
+          the coin
+        </p>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="col-8 col-md-6 m-auto p-0">
+              <div class="Top">
+                <img src="assets/img/usa1.png" alt="" srcset="" />
+                <h5>White paper</h5>
+              </div>
+              <div class="Bottom">
+                <a
+                  href="https://spcoin.io/files/WhitepaperSPCoin.pdf"
+                  download="whitepaper"
+                  ><button>Download</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col-8 col-md-6 m-auto p-0">
+              <div class="Top">
+                <img src="assets/img/usa1.png" alt="" srcset="" />
+                <h5>Marketing plan</h5>
+              </div>
+              <div class="Bottom">
+                <button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- white paper -->
+      <!-- Road map -->
+      <div id="map" class="hidden-id"></div>
+      <section
+        id="roadmap"
+        class="roadmap section-padding pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="container">
+          <h1 class="text-center text-color-sell">Road Map</h1>
+          <div
+            class="row animated fadeInUpShorter mt-5"
+            data-animation="fadeInUpShorter"
+            data-animation-delay="0.6s"
+            style="animation-delay: 0.6s; opacity: 1"
+          >
+            <div class="col-12">
+              <div class="roadmap-container">
+                <div
+                  class="swiper-container swiper-container-horizontal"
+                  style="cursor: grab"
+                >
+                  <div
+                    class="swiper-wrapper timeline"
+                    style="
+                      transition-duration: 0ms;
+                      transform: translate3d(0px, 0px, 0px);
+                    "
+                  >
+                    <div
+                      class="swiper-slide swiper-slide-active"
+                      style="width: 209.25px"
+                    >
+                      <div class="roadmap-info">
+                        <span class="date">June 2020</span>
+                        <div class="status">
+                          <span>Launch beta version of ELD wallet</span><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide active swiper-slide-next"
+                      style="width: 209.25px"
+                    >
+                      <div class="roadmap-info active">
+                        <span class="date">July 2020</span>
+                        <div class="status">
+                          <span
+                            >Launch the official version of ELD Wallet and
+                            Exchange</span
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 209.25px">
+                      <div class="roadmap-info">
+                        <span class="date">August 2020</span>
+                        <div class="status">
+                          <span
+                            >Start trading on the exchange with 20,000+ traders
+                            + Competitions</span
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 209.25px">
+                      <div class="roadmap-info">
+                        <span class="date">October 2020</span>
+                        <div class="status">
+                          <span>- Engage and Publish more partners</span
+                          ><br /><span>- Launch Token sale Platform</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 209.25px">
+                      <div class="roadmap-info">
+                        <span class="date">January 2021</span>
+                        <div class="status">
+                          <span>Publish and Start Token Burning Schedule</span
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 209.25px">
+                      <div class="roadmap-info">
+                        <span class="date">February 2021</span>
+                        <div class="status">
+                          <span>Burn 20% of ELD total amount</span><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 209.25px">
+                      <div class="roadmap-info">
+                        <span class="date">March 2021</span>
+                        <div class="status">
+                          <span
+                            >Launch option margin and OTC, become TOP 10 global
+                            volume Exchange</span
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-control">
+                  <span class="prev-slide"></span
+                  ><span class="next-slide"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Road map -->
+      <!-- news -->
+      <div id="news" class="hidden-id"></div>
+      <div
+        class="container news pt-5 pb-5"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="text-color-buy text-center">News</h1>
+        <div class="row list2">
+          <div class="col-md-4 group-0">
+            <div class="card">
+              <img
+                src="https://miro.medium.com/fit/c/700/210/1*43FJyipsE8K3NyrdkDmKyA.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <!-- <h5 class="card-title">
+                SPExchange: Ultimate Crypto-exchange for Blockchain Startups
+              </h5> -->
+                <a
+                  href="https://medium.com/@spexchange.official/spexchange-private-meetup-t%E1%BA%A1i-kiev-ukraina-d499614be5ee"
+                  target="_blank"
+                  ><p class="card-text">
+                    SP Exchange, Private Meetup tại Kiev UKraina
+                  </p>
+                </a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 group-0">
+            <div class="card">
+              <img
+                src="https://miro.medium.com/max/700/1*2xSNY7OV8skBSBibz1iu2w@2x.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <!-- <h5 class="card-title">
+                SPExchange: Ultimate Crypto-exchange for Blockchain Startups
+              </h5> -->
+                <a
+                  href="https://medium.com/@spexchange.official/s%E1%BB%B1-ki%E1%BB%87n-gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-spexchange-spcoin-v%C3%A0o-ng%C3%A0y-12-9-2020-t%E1%BA%A1i-th%E1%BB%A7-%C4%91%C3%B4-h%C3%A0-n%E1%BB%99i-v%E1%BB%9Bi-h%C6%A1n-200-kh%C3%A1ch-ca78b93091"
+                  target="_blank"
+                  ><p class="card-text">
+                    Sự kiện giới thiệu về SPExchange — SPCoin vào ngày 12/9/2020
+                    tại thủ đô Hà Nội với hơn 200 khách mời từ khắp các tỉnh
+                    thành phía Bắc.
+                  </p>
+                </a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 group-0">
+            <div class="card">
+              <img
+                src="https://miro.medium.com/max/700/1*0rPVElYWKGeqswDPFx4w8w.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <!-- <h5 class="card-title">
+                SPExchange: Ultimate Crypto-exchange for Blockchain Startups
+              </h5> -->
+                <a
+                  href="https://medium.com/@spexchange.official/s%E1%BB%B1-ki%E1%BB%87n-private-c%E1%BB%A7a-spexchange-t%E1%BA%A1i-c%E1%BA%A7n-th%C6%A1-05-09-2020-ff8266032d5c"
+                  target="_blank"
+                  ><p class="card-text">
+                    Sự kiện Private của SP Exchange tại Cần Thơ 05/09/2020
+                  </p>
+                </a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- news -->
+      <!-- media -->
+      <div
+        class="container pt-5 pb-5"
+        id="media"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="text-color-buy text-center">Media</h1>
+        <div
+          class="card-deck m-auto row row-cols-2 row-cols-lg-4"
+          style="color: #000"
+        >
+          <div class="col">
+            <div class="card">
+              <a
+                href="https://www.bloomberg.com/press-releases/2020-09-18/spexchange-ultimate-crypto-exchange-for-blockchain-startups"
+                target="_blank"
+                ><img
+                  src="assets/img/bloomberg.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a
+                href="https://finance.yahoo.com/news/spexchange-ultimate-crypto-exchange-blockchain-153000585.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/img/finance.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a
+                href="http://www.digitaljournal.com/pr/4811536 (http://www.digitaljournal.com/pr/4811536"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/img/digitaljournal.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a
+                href="https://news.yahoo.com/spexchange-ultimate-crypto-exchange-blockchain-153000585.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="assets/img/yahoo-news.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- media -->
+      <!-- video -->
+      <!-- <div class="container mt-5 mb-5 pt-5 pb-5">
+        <h1 class="text-color-buy text-center">Videos</h1>
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col">
+            <iframe
+              class="video-news"
+              src="https://www.youtube.com/embed/shRKONPDS1w"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="col">
+            <iframe
+              class="video-news"
+              src="https://www.youtube.com/embed/shRKONPDS1w"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="col">
+            <iframe
+              class="video-news"
+              src="https://www.youtube.com/embed/shRKONPDS1w"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div> -->
+      <!-- video -->
+    </div>
+    <footer class="pt-5 pb-5">
+      <!-- <img src="assets/img/back.001.png" alt="" srcset="" /> -->
+      <div class="container text-left">
+        <h1 class="text-center text-color-sell">Join the SPCoin Revolution</h1>
+        <div class="row row-cols-3 row-cols-lg-4">
+          <div class="col col-12">
+            <p class="text-color-buy">Contact Us</p>
+            <div class="row row-cols-4">
+              <img src="assets/img/social/twitter.png" alt="" />
+              <img src="assets/img/social/face.png" alt="" />
+              <img src="assets/img/social/tele.png" alt="" />
+              <img src="assets/img/social/youtube.png" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <p class="text-color-buy">Ecosystem</p>
+            <div><a href="/">SP Exchange</a></div>
+            <div><a href="/">Trading option</a></div>
+            <div><a href="/">Staking</a></div>
+          </div>
+          <div class="col">
+            <p class="text-color-buy">Document</p>
+            <div><a href="/">White paper</a></div>
+            <div><a href="/">Marketing plan</a></div>
+            <div><a href="/">Business Licence</a></div>
+          </div>
+          <div class="col">
+            <p class="text-color-buy">Support</p>
+            <div><a href="/">info@spcoin.io</a></div>
+            <div><a href="/">help@spcoin.io</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-doughnutlabel@2.0.3/dist/chartjs-plugin-doughnutlabel.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

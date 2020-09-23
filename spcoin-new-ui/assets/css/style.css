@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #222f3e;
+  color: #fff;
+  font-weight: 500;
+  min-width: 300px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+nav.navbar-dark {
+  background-color: #222f3e;
+}
+.white-bg {
+  background-color: #fff;
+}
+.light-blue-bg {
+  background-color: #00a89d;
+}
+.main-blue-color {
+  color: #222f3e;
+}
+.text-color-buy {
+  color: #16e7cf;
+}
+.text-color-sell {
+  color: #ff644e;
+}
+p {
+  margin: 20px auto;
+}
+h1 {
+  margin: 30px auto;
+  font-size: 30px;
+}
+.navbar-brand img {
+  width: 150px;
+}
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-toggler-icon {
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.navbar-expand-lg .navbar-nav .Register,
+.navbar-expand-lg .navbar-nav .Login {
+  width: 100px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin: 0 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+.navbar-expand-lg .navbar-nav .Register,
+.navbar-expand-lg .navbar-nav .Login:hover {
+  background-color: #222f3e;
+  color: #fff;
+}
+.navbar-expand-lg .navbar-nav .Register:hover,
+.navbar-expand-lg .navbar-nav .Login {
+  background-color: #fff;
+  color: #222f3e;
+}
+.Slide img {
+  width: 100%;
+  height: 600px;
+  object-fit: fill;
+  margin-top: 76px;
+}
+.Slide .Content {
+  position: absolute;
+  top: 100px;
+  max-width: 1200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.Slide .Content h1 {
+  color: #fff;
+}
+.Slide .input-group {
+  width: 40%;
+  margin: auto;
+}
+.Slide .input-group input {
+  background-color: transparent;
+  color: #fff;
+  border-color: #00a89d;
+}
+.Slide .input-group-text {
+  background-color: #00a89d;
+  color: #fff;
+  border-color: #00a89d;
+  cursor: pointer;
+  width: 70px;
+  justify-content: center;
+}
+.Slide .left {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.Slide .right {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.Content {
+  text-align: center;
+  margin: 20px auto;
+}
+.intro .col-4 {
+  background-color: #283547;
+}
+.problem .Top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 20px;
+  background-color: #00a89d;
+  color: #fff;
+}
+.problem .Top img {
+  padding: 10px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-top: -50px;
+  background: #222f3e;
+  border: 10px solid #00a89d;
+}
+.problem .Bottom {
+  background-color: #283547;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.problem button {
+  border-radius: 2rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+  color: #222f3e;
+}
+.problem button:hover {
+  background-color: #222f3e;
+  color: #fff;
+}
+.problem p {
+  display: flex;
+  align-items: center;
+  height: 40%;
+}
+.white-paper .Top {
+  background: #00a89d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 20px;
+}
+.white-paper .Bottom {
+  color: #16e7cf;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 200px;
+}
+.white-paper .Top img {
+  background: #222f3e;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.white-paper .Top {
+  margin-top: 50px;
+}
+.white-paper button {
+  background-color: #16e7cf;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: #fff 1px solid;
+  outline: none;
+  color: #fff;
+  margin: 10px;
+  width: 80%;
+}
+.white-paper .Bottom {
+  height: auto;
+}
+#Total .img-fluid,
+.rounds .img-fluid {
+  width: 70%;
+}
+iframe {
+  width: 100%;
+}
+.intro .card-body,
+.intro .card-text,
+.sp-coin .card-body,
+.sp-coin .card-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.card img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+.intro .card img,
+.sp-coin img {
+  height: 120px;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  color: #fff;
+  cursor: default;
+  background-color: #00a89d;
+  border-color: #fff;
+}
+.card-footer,
+.card-header {
+  background-color: #283547;
+}
+.card p {
+  margin: auto;
+}
+.card .col-3 {
+  background: #283547;
+  display: flex;
+}
+.news img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+#media img {
+  height: 100px;
+  width: 100%;
+}
+#media .card,
+.news .card {
+  margin-bottom: 1rem;
+}
+.news a {
+  color: #16e7cf;
+}
+/* .news .card-text {
+  min-height: 100px;
+} */
+footer {
+  box-shadow: rgb(225, 229, 234) 0px -1px 2px 0px;
+  /* position: relative; */
+  /* background-color: #00a89d; */
+}
+footer .col div {
+  color: #fff;
+  padding: 5px 0;
+}
+footer .col img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+footer a {
+  color: #fff;
+}
+.hidden-id {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+.news .card,
+.news .card-footer,
+#media .card {
+  background-color: #fff;
+  color: #000;
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .Slide img {
+    object-fit: cover;
+  }
+}
+/* 
+Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .problem .Bottom {
+    height: auto;
+  }
+  .Specialties .Bottom {
+    height: auto;
+  }
+  .navbar-expand-lg .navbar-nav .Register,
+  .navbar-expand-lg .navbar-nav .Login {
+    margin-bottom: 10px;
+  }
+  .news .card-text {
+    min-height: auto;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .problem .col,
+  .Specialties .col {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .problem .Bottom,
+  .problem .Connection .Bottom {
+    height: auto;
+  }
+  #chDonut2,
+  #chDonut3 {
+    display: none !important;
+  }
+  #chDonut2 + p,
+  #chDonut3 + p {
+    display: none;
+  }
+  .Slide .input-group {
+    width: 100%;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
