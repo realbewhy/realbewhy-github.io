@@ -212,6 +212,7 @@ iframe {
   cursor: default;
   background-color: #00a89d;
   border-color: #fff;
+  height: 100%;
 }
 .card-footer,
 .card-header {
