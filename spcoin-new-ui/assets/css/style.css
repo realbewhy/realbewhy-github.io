@@ -275,6 +275,9 @@ footer a {
   background-color: #fff;
   color: #000;
 }
+.Specialties .card{
+  height: 100%;
+}
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .Slide img {
