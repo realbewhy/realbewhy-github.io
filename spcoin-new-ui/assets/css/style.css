@@ -334,12 +334,33 @@ p {
   width: 15px;
   height: 15px;
 }
-#Ecosystem a{
+#Ecosystem a {
   cursor: pointer;
   text-decoration: none;
 }
-iframe{
+iframe {
   height: 300px;
+}
+.line-arrow.right {
+  border-top: 1px solid #73fdea;
+  border-right: 1px solid #73fdea;
+  transform: rotate(54deg) skew(20deg);
+  right: 0;
+}
+.line-arrow.left {
+  border-top: 1px solid #73fdea;
+  border-left: 1px solid #73fdea;
+  transform: rotate(-54deg) skew(-20deg);
+}
+.line-arrow {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 12px;
+  width: 4em;
+  height: 4em;
+  margin-top: -2em;
+  top: 50%;
 }
 @media (max-height: 600px), (max-width: 480px) {
   .credits {
