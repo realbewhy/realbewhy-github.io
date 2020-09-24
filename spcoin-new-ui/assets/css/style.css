@@ -70,7 +70,7 @@ h1 {
 }
 .Slide .Content {
   position: absolute;
-  top: 100px;
+  top: 120px;
   max-width: 1200px;
   left: 0;
   right: 0;
@@ -80,28 +80,40 @@ h1 {
 .Slide .Content h1 {
   color: #fff;
 }
-.Slide .input-group {
+/* .Slide .input-group {
   width: 40%;
   margin: auto;
-}
+} */
 .Slide .input-group input {
   background-color: transparent;
   color: #fff;
   border-color: #00a89d;
+  font-size: 10px;
 }
-.Slide .input-group-text {
-  background-color: #00a89d;
+footer .input-group-text {
+  background-color: #16e7cf;
   color: #fff;
   border-color: #00a89d;
   cursor: pointer;
   width: 70px;
   justify-content: center;
 }
+.Slide .input-group-text {
+  background-color: #16e7cf;
+  color: #fff;
+  border-color: #00a89d;
+  cursor: pointer;
+  width: 60px;
+  justify-content: center;
+  font-size: 10px;
+  padding: 0;
+}
 .Slide .left {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
-.Slide .right {
+.Slide .right,
+footer .right {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
@@ -127,7 +139,7 @@ h1 {
   width: 75px;
   height: 75px;
   object-fit: contain;
-  margin-top: -50px;
+  margin-top: -37.5px;
   background: #222f3e;
   border: 10px solid #00a89d;
 }
@@ -228,12 +240,12 @@ iframe {
   height: 120px;
 }
 .news img {
-  height: 200px;
+  height: 130px;
   width: 100%;
   object-fit: cover;
 }
 #media img {
-  height: 100px;
+  height: 70px;
   width: 100%;
 }
 #media .card,
@@ -243,13 +255,14 @@ iframe {
 .news a {
   color: #16e7cf;
 }
-/* .news .card-text {
-  min-height: 100px;
-} */
+.news .card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 footer {
   box-shadow: rgb(225, 229, 234) 0px -1px 2px 0px;
-  /* position: relative; */
-  /* background-color: #00a89d; */
 }
 footer .col div {
   color: #fff;
@@ -275,9 +288,65 @@ footer a {
   background-color: #fff;
   color: #000;
 }
-.Specialties .card{
+.Specialties .card,
+#Ecosystem .card {
   height: 100%;
 }
+footer .form-control {
+  border-radius: 20px 0 0 20px;
+}
+footer .input-group-text {
+  width: 100px;
+  outline: none;
+}
+.circle {
+  width: 100%;
+  /* margin: 6px 6px 20px; */
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+.circle canvas {
+  vertical-align: top;
+}
+.circle strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+p {
+  margin: 40px auto;
+}
+.input-group-prepend svg {
+  width: 15px;
+  height: 15px;
+}
+#Ecosystem a{
+  cursor: pointer;
+  text-decoration: none;
+}
+iframe{
+  height: 300px;
+}
+@media (max-height: 600px), (max-width: 480px) {
+  .credits {
+    position: inherit;
+  }
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .Slide img {
@@ -315,12 +384,9 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .problem .Connection .Bottom {
     height: auto;
   }
-  #chDonut2,
-  #chDonut3 {
-    display: none !important;
-  }
-  #chDonut2 + p,
-  #chDonut3 + p {
+  .circle.full,
+  .circle.full + div + div,
+  .circle.full + .pt-3 {
     display: none;
   }
   .Slide .input-group {

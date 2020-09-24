@@ -31,11 +31,7 @@
   position: relative;
   margin: 70px 10px 0;
   padding: 15px;
-  background: linear-gradient(
-    180deg,
-    rgba(71, 88, 168, 0.4) 0%,
-    rgba(57, 70, 134, 0) 100%
-  );
+  background: linear-gradient(180deg, #283547 0%, rgba(57, 70, 134, 0) 100%);
   border-radius: 4px;
   font-weight: 500;
   font-size: 14px;

@@ -8,119 +8,46 @@
 //     document.getElementById("Menu").style.backgroundColor = "transparent";
 //   }
 // }
+
 window.onload = function () {
-  new Chart(document.getElementById("chDonut1"), {
-    type: "doughnut",
-    data: {
-      // backgroundColor: "#000",
-      labels: ["Sold", "Remain"],
-      datasets: [
-        {
-          data: [6000000, 4000000],
-          backgroundColor: ["#FF644E", "#00A89D"],
-          borderWidth: 2,
-          weight: 1,
+  function circle($) {
+    $(".second.circle")
+      .circleProgress({
+        value: 0.6,
+        fill: {
+          color: "#ff644e",
         },
-      ],
-    },
-    options: {
-      plugins: {
-        doughnutlabel: {
-          labels: [
-            {
-              text: "60%",
-              font: {
-                size: "30",
-              },
-              color: "#fff",
-              background: "#000",
-            },
-          ],
+        emptyFill: "#16e7cf",
+        startAngle: Math.PI * 1.5,
+        size: 150,
+      })
+      .on("circle-animation-progress", function (event, progress) {
+        $(this)
+          .find("strong")
+          .html(Math.round(60 * progress) + "<i>%</i>");
+      });
+  }
+
+  (function ($) {
+    $(".full.circle")
+      .circleProgress({
+        value: 0,
+        fill: {
+          color: "#ff644e",
         },
-      },
-      cutoutPercentage: 90,
-      legend: {
-        display: false,
-      },
-      tooltips: {
-        enabled: false,
-      },
-    },
-  });
-  new Chart(document.getElementById("chDonut2"), {
-    type: "doughnut",
-    data: {
-      // backgroundColor: "#000",
-      labels: ["Sold", "Remain"],
-      datasets: [
-        {
-          data: [0, 10000000],
-          backgroundColor: ["#FF644E", "#00A89D"],
-          borderWidth: 2,
-          weight: 1,
-        },
-      ],
-    },
-    options: {
-      plugins: {
-        doughnutlabel: {
-          labels: [
-            {
-              text: "100%",
-              font: {
-                size: "30",
-              },
-              color: "#fff",
-              background: "#000",
-            },
-          ],
-        },
-      },
-      cutoutPercentage: 90,
-      legend: {
-        display: false,
-      },
-      tooltips: {
-        enabled: false,
-      },
-    },
-  });
-  new Chart(document.getElementById("chDonut3"), {
-    type: "doughnut",
-    data: {
-      // backgroundColor: "#000",
-      labels: ["Sold", "Remain"],
-      datasets: [
-        {
-          data: [0, 10000000],
-          backgroundColor: ["#FF644E", "#00A89D"],
-          borderWidth: 2,
-          weight: 1,
-        },
-      ],
-    },
-    options: {
-      plugins: {
-        doughnutlabel: {
-          labels: [
-            {
-              text: "100%",
-              font: {
-                size: "30",
-              },
-              color: "#fff",
-              background: "#000",
-            },
-          ],
-        },
-      },
-      cutoutPercentage: 90,
-      legend: {
-        display: false,
-      },
-      tooltips: {
-        enabled: false,
-      },
-    },
-  });
+        emptyFill: "#16e7cf",
+        startAngle: Math.PI * 1.5,
+        size: 150,
+      })
+      .on("circle-animation-progress", function (event, progress) {
+        $(this)
+          .find("strong")
+          .html(Math.round(100) + "<i>%</i>");
+      });
+  })(jQuery);
+
+  circle(jQuery);
+  setInterval(() => {
+    circle(jQuery);
+  }, 2000);
 };
