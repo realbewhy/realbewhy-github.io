@@ -419,6 +419,9 @@ iframe {
 .swiper-pagination-fraction {
   bottom: -4px;
 }
+#media .card{
+  box-shadow: none;
+}
 @media (max-height: 600px), (max-width: 480px) {
   .credits {
     position: inherit;
