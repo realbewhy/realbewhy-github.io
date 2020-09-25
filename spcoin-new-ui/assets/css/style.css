@@ -488,7 +488,8 @@ No media query since the extra-large breakpoint has no upper bound on its width 
 @media (max-width: 575.98px) {
   .intro .card img,
   .sp-coin img {
-    width: 100%;
+    width: 60px;
+    height: 60px;
   }
   .big-circle {
     width: 70px;
@@ -501,5 +502,8 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .rounds p,
   .rounds span {
     font-size: 10px;
+  }
+  .card .no-gutters {
+    height: 135px;
   }
 }
