@@ -108,7 +108,8 @@ footer .input-group-text {
   font-size: 10px;
   padding: 0;
 }
-.Slide .left {
+.Slide .left,
+footer .left {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
@@ -294,7 +295,8 @@ footer a {
   height: 100%;
 }
 footer .form-control {
-  border-radius: 20px 0 0 20px;
+  border: none !important;
+  box-shadow: none !important;
 }
 footer .input-group-text {
   width: 100px;
@@ -419,7 +421,7 @@ iframe {
 .swiper-pagination-fraction {
   bottom: -4px;
 }
-#media .card{
+#media .card {
   box-shadow: none;
 }
 @media (max-height: 600px), (max-width: 480px) {
