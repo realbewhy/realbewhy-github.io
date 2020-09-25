@@ -467,9 +467,7 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .problem .Connection .Bottom {
     height: auto;
   }
-  .circle.full,
-  .circle.full + div + div,
-  .circle.full + .pt-3 {
+  .round-2, .round-3{
     display: none;
   }
   .Slide .input-group {
@@ -510,5 +508,8 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   }
   .card .no-gutters {
     height: 135px;
+  }
+  .Slide img{
+    height: 95vh;
   }
 }

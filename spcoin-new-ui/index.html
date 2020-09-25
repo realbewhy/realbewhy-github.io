@@ -35,7 +35,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/hover.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/timeline.css" />
@@ -169,7 +169,7 @@
             Cryptocurrency Exchange and More
           </h1>
           <p
-            class="animate__animated animate__fadeInUp animate__delay-1s col-12 col-lg-6"
+            class="animate__animated animate__fadeInUp animate__delay-1s col-12 col-lg-6 mt-3"
           >
             Our mission is advancing the blockchain technology to reach towards
             a decentralized and a sustainable financial world
@@ -177,8 +177,7 @@
           <div
             class="row animate__animated animate__fadeInUp animate__delay-1s mt-5"
           >
-            <div class="col-md-4 col-8 m-auto">
-              <div class="pb-3">Round 1: $0.02</div>
+            <div class="col-md-4 col-8 m-auto round-1">
               <div class="second circle">
                 <strong></strong>
               </div>
@@ -186,8 +185,8 @@
               <div class="text-color-buy">Remain: 15.000.000 SPC</div>
               <div>Total: 50.000.000 SPC</div>
             </div>
-            <div class="col-md-4 col-8 m-auto">
-              <div class="pb-3">Round 2: $0.04</div>
+            <div class="col-md-4 col-8 m-auto round-2">
+              <div class="pb-3 font-weight-bold">Round 2: $0.04</div>
               <div class="full circle">
                 <strong></strong>
               </div>
@@ -195,8 +194,8 @@
               <div class="text-color-buy">Remain: 60.000.000SPC</div>
               <div>Total: 60.000.000 SPC</div>
             </div>
-            <div class="col-md-4 col-8 m-auto">
-              <div class="pb-3">Round 3: $0.05</div>
+            <div class="col-md-4 col-8 m-auto round-3">
+              <div class="pb-3 font-weight-bold">Round 3: $0.05</div>
               <div class="full circle">
                 <strong></strong>
               </div>
@@ -1268,6 +1267,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe
                     src="https://www.youtube-nocookie.com/embed/YGfECemh3uU"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -1276,6 +1277,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe
                     src="https://www.youtube-nocookie.com/embed/TcuciSs98nQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -1284,6 +1287,8 @@
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe
                     src="https://www.youtube-nocookie.com/embed/shRKONPDS1w"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -1291,7 +1296,11 @@
               <div class="swiper-slide">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe
+                    width="560"
+                    height="315"
                     src="https://www.youtube-nocookie.com/embed/MFrAPZ-LioQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -1737,7 +1746,14 @@
     </div>
     <footer class="pt-5 pb-5">
       <!-- <img src="assets/img/back.001.png" alt="" srcset="" /> -->
-      <div class="container text-left">
+      <div
+        class="container text-left"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <h1 class="text-center text-color-sell">Join the SPCoin Revolution</h1>
         <div
           class="input-group col-12 col-md-8 col-lg-5 ml-auto mr-auto mt-5 mb-5"
