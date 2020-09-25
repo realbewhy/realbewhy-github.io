@@ -87,7 +87,7 @@ h1 {
 .Slide .input-group input {
   background-color: transparent;
   color: #fff;
-  border-color: #00a89d;
+  border-color: #16e7cf;
   font-size: 10px;
 }
 footer .input-group-text {
@@ -101,7 +101,7 @@ footer .input-group-text {
 .Slide .input-group-text {
   background-color: #16e7cf;
   color: #fff;
-  border-color: #00a89d;
+  border-color: #16e7cf;
   cursor: pointer;
   width: 60px;
   justify-content: center;
@@ -498,7 +498,8 @@ No media query since the extra-large breakpoint has no upper bound on its width 
     height: 40px;
     width: 40px;
   }
-  .rounds p, .rounds span {
+  .rounds p,
+  .rounds span {
     font-size: 10px;
   }
 }
