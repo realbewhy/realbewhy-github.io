@@ -126,8 +126,8 @@ footer .right {
 }
 .problem .Top,
 .white-paper .Top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
   padding-bottom: 20px;
   background-color: #00a89d;
   color: #fff;
@@ -136,10 +136,10 @@ footer .right {
 .white-paper .Top img {
   padding: 10px;
   border-radius: 50px;
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
-  margin-top: -37.5px;
+  margin-top: -42.5px;
   background: #222f3e;
   border: 10px solid #00a89d;
 }
@@ -148,8 +148,8 @@ footer .right {
   background-color: #283547;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0.125px;
+  border-bottom-right-radius: 0.125px;
   height: 430px;
   display: flex;
   flex-direction: column;
@@ -217,13 +217,14 @@ iframe {
 .sp-coin img {
   height: 75px;
   width: 75px;
-  padding: 20px;
+  padding: 10px;
 }
 .card {
   color: #fff;
   cursor: default;
   background-color: #00a89d;
-  border-color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-footer,
 .card-header {
@@ -339,28 +340,84 @@ p {
   text-decoration: none;
 }
 iframe {
-  height: 300px;
+  margin: auto;
+  margin-bottom: 1rem;
 }
-.line-arrow.right {
-  border-top: 1px solid #73fdea;
-  border-right: 1px solid #73fdea;
-  transform: rotate(54deg) skew(20deg);
-  right: 0;
+.big-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
-.line-arrow.left {
-  border-top: 1px solid #73fdea;
-  border-left: 1px solid #73fdea;
-  transform: rotate(-54deg) skew(-20deg);
+.small-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  max-width: 150px;
+  max-height: 150px;
 }
-.line-arrow {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   position: absolute;
   overflow: hidden;
   display: inline-block;
-  font-size: 12px;
+  font-size: 10px;
   width: 4em;
   height: 4em;
   margin-top: -2em;
   top: 50%;
+  border-top: 1px solid #73fdea;
+  border-left: 1px solid #73fdea;
+  transform: rotate(-54deg) skew(-20deg);
+  background: none;
+  outline: none;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 10px;
+  width: 4em;
+  height: 4em;
+  margin-top: -2em;
+  top: 50%;
+  border-top: 1px solid #73fdea;
+  border-right: 1px solid #73fdea;
+  transform: rotate(54deg) skew(20deg);
+  background: none;
+  outline: none;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 3px;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 3px;
+}
+.swiper-pagination {
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  background: #73fdea;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -4px;
 }
 @media (max-height: 600px), (max-width: 480px) {
   .credits {
@@ -413,8 +470,35 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .Slide .input-group {
     width: 100%;
   }
+  iframe {
+    height: calc(89vw * 9 / 16);
+    width: 89vw;
+  }
+  /* .big-circle {
+    width: 20vw;
+    height: 20vw;
+  }
+  .small-circle {
+    height: 15vw;
+    width: 15vw;
+  } */
 }
 
 /*Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .intro .card img,
+  .sp-coin img {
+    width: 100%;
+  }
+  .big-circle {
+    width: 70px;
+    height: 70px;
+  }
+  .small-circle {
+    height: 40px;
+    width: 40px;
+  }
+  .rounds p, .rounds span {
+    font-size: 10px;
+  }
 }
