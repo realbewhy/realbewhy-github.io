@@ -6,8 +6,8 @@ body {
   color: #fff;
   font-weight: 500;
   min-width: 300px;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-family: Comfortaa, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
 }
 nav.navbar-dark {
   background-color: #222f3e;
@@ -424,6 +424,9 @@ iframe {
 #media .card {
   box-shadow: none;
 }
+.rounds p, .rounds span{
+  font-size: 13px;
+}
 @media (max-height: 600px), (max-width: 480px) {
   .credits {
     position: inherit;
@@ -467,7 +470,8 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .problem .Connection .Bottom {
     height: auto;
   }
-  .round-2, .round-3{
+  .round-2,
+  .round-3 {
     display: none;
   }
   .Slide .input-group {
@@ -509,7 +513,7 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .card .no-gutters {
     height: 135px;
   }
-  .Slide img{
+  .Slide img {
     height: 95vh;
   }
 }
