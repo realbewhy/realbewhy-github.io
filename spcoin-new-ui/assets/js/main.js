@@ -1,4 +1,6 @@
-fetch("https://medium.com/feed/@spexchange.spcoin", { mode: "cors" })
+fetch(
+  "https://cors-anywhere.herokuapp.com/https://medium.com/feed/@spexchange.spcoin"
+)
   .then((response) => response.text())
   .then((str) => new window.DOMParser().parseFromString(str, "text/xml"))
   .then((data) => {
