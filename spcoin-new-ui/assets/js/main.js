@@ -4,7 +4,6 @@ fetch("https://medium.com/feed/@spexchange.spcoin")
   .then((data) => {
     const items = data.querySelectorAll("item");
     items.forEach((item) => {
-      console.log(item);
       const title = item.querySelector("title").textContent;
       const link = item.querySelector("guid").textContent;
       const date = new Date(item.querySelector("updated").textContent);
@@ -22,11 +21,9 @@ fetch("https://medium.com/feed/@spexchange.spcoin")
         "November",
         "December",
       ];
-
       var img = $(
         item.getElementsByTagNameNS("*", "encoded").item(0).textContent
       ).find("img")[0].src;
-      console.log(title, link, img, date);
       $("#swiper-wrapper").append(
         `<div class="swiper-slide"><div class="card"><img src="` +
           img +
