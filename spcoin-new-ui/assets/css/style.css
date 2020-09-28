@@ -239,7 +239,7 @@ iframe {
   display: flex;
 }
 .card .no-gutters {
-  height: 120px;
+  height: 135px;
 }
 .news img {
   height: 130px;
@@ -499,14 +499,6 @@ No media query since the extra-large breakpoint has no upper bound on its width 
     height: calc(89vw * 9 / 16);
     width: 89vw;
   }
-  /* .big-circle {
-    width: 20vw;
-    height: 20vw;
-  }
-  .small-circle {
-    height: 15vw;
-    width: 15vw;
-  } */
 }
 
 /*Extra small devices (portrait phones, less than 576px) */
@@ -527,9 +519,6 @@ No media query since the extra-large breakpoint has no upper bound on its width 
   .rounds p,
   .rounds span {
     font-size: 10px;
-  }
-  .card .no-gutters {
-    height: 135px;
   }
   .Slide img {
     height: 95vh;
