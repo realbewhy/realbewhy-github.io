@@ -104,7 +104,8 @@ window.onload = function () {
   new Swiper(".swiper-container-roadmap", {
     slidesPerView: 4,
     grabCursor: true,
-    activeIndex: 1,
+    activeIndex: 2,
+    initialSlide: 5,
     breakpoints: {
       576: { slidesPerView: 1 },
       767: { slidesPerView: 2 },
