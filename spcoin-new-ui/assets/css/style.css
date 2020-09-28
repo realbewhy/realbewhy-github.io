@@ -535,3 +535,9 @@ No media query since the extra-large breakpoint has no upper bound on its width 
     height: 95vh;
   }
 }
+
+@media (max-width: 350px) {
+  .Slide img {
+    height: 120vh;
+  }
+}
