@@ -40,6 +40,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/timeline.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/plyr.css" />
   </head>
   <body>
     <header>
@@ -1180,46 +1181,32 @@
           <div class="swiper-container swiper-container-videos">
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-slide-videos">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    src="https://www.youtube-nocookie.com/embed/YGfECemh3uU"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                <div
+                  id="player"
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="MFrAPZ-LioQ"
+                ></div>
               </div>
               <div class="swiper-slide">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    src="https://www.youtube-nocookie.com/embed/TcuciSs98nQ"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                <div
+                  id="player2"
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="MFrAPZ-LioQ"
+                ></div>
               </div>
               <div class="swiper-slide">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    src="https://www.youtube-nocookie.com/embed/shRKONPDS1w"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                <div
+                  id="player3"
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="MFrAPZ-LioQ"
+                ></div>
               </div>
               <div class="swiper-slide">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/MFrAPZ-LioQ"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                <div
+                  id="player4"
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="MFrAPZ-LioQ"
+                ></div>
               </div>
             </div>
             <div class="swiper-pagination swiper-pagination-videos"></div>
@@ -1718,5 +1705,12 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/plyr.js"></script>
+    <script>
+      const player = new Plyr("#player");
+      new Plyr("#player2");
+      new Plyr("#player3");
+      new Plyr("#player4");
+    </script>
   </body>
 </html>
