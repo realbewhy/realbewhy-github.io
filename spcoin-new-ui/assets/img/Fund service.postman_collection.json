@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "e87f466e-df9b-4452-8a5c-884b23e11292",
+		"name": "Fund service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List funds",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{user_agw}}/fund-service/fund-list",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"fund-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{user_agw}}/fund-service/get-address?coin=BTC&network=BTC",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"get-address"
+					],
+					"query": [
+						{
+							"key": "coin",
+							"value": "BTC"
+						},
+						{
+							"key": "network",
+							"value": "BTC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coin\": \"BTC\",\n    \"network\":\"BTC\",\n    \"address\": \"bc1qvfu5sumwkr0jp7pt82k8nzgjy032rs98rquy84\",\n    \"amount\": 0.01\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{user_agw}}/fund-service/withdraw",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirm withdraw",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{user_agw}}/fund-service/confirm-withdraw/UlcwRnB6SGJ1TzZpYkpSQ0VuNU1qd1Y5aW80dUUvOFBYcXh5MzJqejFZNE11MUk4T2dpM0tnT1c2Zlh3aHU5OHVEUkVqdDZsOHRFUEt5Z1AwOFB6VmZQMUVtb3pmV0pwVTlEMk5UekQzRWZBMUF0dlpHSVZLb1NpWmM1bkJkSitaQTIrV0FzOVBRUUJwd3o1WUZaYlB3PT0-",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"confirm-withdraw",
+						"UlcwRnB6SGJ1TzZpYkpSQ0VuNU1qd1Y5aW80dUUvOFBYcXh5MzJqejFZNE11MUk4T2dpM0tnT1c2Zlh3aHU5OHVEUkVqdDZsOHRFUEt5Z1AwOFB6VmZQMUVtb3pmV0pwVTlEMk5UekQzRWZBMUF0dlpHSVZLb1NpWmM1bkJkSitaQTIrV0FzOVBRUUJwd3o1WUZaYlB3PT0-"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List withdraws",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coin\" : null,\n    \"from\": 0,\n    \"to\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{user_agw}}/fund-service/withdraw-list",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"withdraw-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List deposits",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coin\" : \"BTC\",\n    \"from\": 0,\n    \"to\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{user_agw}}/fund-service/deposit-list",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"deposit-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel withdraw",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{user_agw}}/fund-service/cancel-withdraw/a38c8b533e7d443f8bc909a5237e1d48",
+					"host": [
+						"{{user_agw}}"
+					],
+					"path": [
+						"fund-service",
+						"cancel-withdraw",
+						"a38c8b533e7d443f8bc909a5237e1d48"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Int] Wallet notify deposit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"service\" : \"BTC\",\n        \"currency\":\"BTC\",\n        \"address\": \"bc1qvfu5sumwkr0jp7pt82k8nzgjy032rs98rquy84\",\n        \"transactionHash\": \"7f2576ff05f987b0ca5bf46a22ce852d3445993b7c5ef595a61beb6086fe79c1\",\n        \"amount\": 0.5\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{fund_url}}/wallet/deposit-notify",
+					"host": [
+						"{{fund_url}}"
+					],
+					"path": [
+						"wallet",
+						"deposit-notify"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
