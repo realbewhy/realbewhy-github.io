@@ -109,7 +109,7 @@ window.onload = function () {
     slidesPerView: 4,
     grabCursor: true,
     activeIndex: 2,
-    initialSlide: 5,
+    initialSlide: 6,
     breakpoints: {
       576: { slidesPerView: 1 },
       767: { slidesPerView: 2 },
